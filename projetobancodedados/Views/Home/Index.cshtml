@@ -1,0 +1,67 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h2 class="display-4">Bem vindo ao programa de banco de dados</h2>
+
+<div>
+    <h1> Relátorios</h1>
+</div>
+  <div>
+      <a asp-controller="Clientes" asp-action="Index" class="btn btn-danger">CLientes</a>
+      <label>Total de registros:</label>
+      @ViewBag.clientes
+      <a asp-area="" asp-controller="Vendas" asp-action="Index" class="btn btn-danger">Vendas</a>
+      <label>Total de registros:</label>
+      @ViewBag.vendas
+      <a asp-area="" asp-controller="Usuarios" asp-action="Index" class="btn btn-danger">Usuarios</a>
+      <label>Total de registros:</label>
+      @ViewBag.usuarios
+  </div>
+  
+ <div>
+    <h1> Inserir registro</h1>
+</div>
+  <div>
+      <a asp-area="" asp-controller="Clientes" asp-action="Create" class="btn btn-danger">CLientes</a>
+
+      <a asp-area="" asp-controller="Vendas" asp-action="Create" class="btn btn-danger">Vendas</a>
+
+      <a asp-area="" asp-controller="Usuarios" asp-action="Create" class="btn btn-danger">Usuarios</a>
+  </div>
+
+  <div>
+    <h1> Remover registros</h1>
+</div>
+  <div>
+      <a asp-area="" asp-controller="Clientes" asp-action="Index" class="btn btn-danger">CLientes</a>
+
+      <a asp-area="" asp-controller="Vendas" asp-action="Index" class="btn btn-danger">Vendas</a>
+
+      <a asp-area="" asp-controller="Usuarios" asp-action="Index" class="btn btn-danger">Usuarios</a>
+  </div>
+
+  <div>
+    <h1> Atualizar registros</h1>
+</div>
+  <div>
+      <a asp-area="" asp-controller="Clientes" asp-action="Index" class="btn btn-danger">CLientes</a>
+
+      <a asp-area="" asp-controller="Vendas" asp-action="Index" class="btn btn-danger">Vendas</a>
+
+      <a asp-area="" asp-controller="Usuarios" asp-action="Index" class="btn btn-danger">Usuarios</a>
+  </div>
+
+  <div></div>
+  <footer>Criado por:
+  </footer>
+    <div>Thiago</div>
+    <div> Ezequiel</div>
+    <div>Rhayza</div>
+    <div>Ronaldo</div>
+    <div>Nivaldo</div>
+     <div>Disciplina: Banco de Dados
+                      2022/2</div>
+    <div>Professor: Howard Roatti</div>
+</div>
